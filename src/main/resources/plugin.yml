@@ -1,0 +1,33 @@
+name: hundundian
+version: '1.0-SNAPSHOT'
+main: com.ydxc2009.hundundian.Hundundian
+api-version: '1.21'
+commands:
+  hundundian:
+    description: 显示所有混沌点插件指令
+    usage: /hundundian
+    permission: hundundian.admin
+  setpoint:
+    description: 在当前位置设置混沌点
+    usage: /setpoint
+    permission: hundundian.admin
+  closepoint:
+    description: 关闭当前的混沌点
+    usage: /closepoint
+    permission: hundundian.admin
+  pointhint:
+    description: 发送混沌点位置提示
+    usage: /pointhint
+    permission: hundundian.admin
+  broadcast:
+    description: 广播混沌点开启提示
+    usage: /broadcast
+    permission: hundundian.admin
+  detector:
+    description: 获得羽毛探测器
+    usage: /detector
+    permission: hundundian.admin
+permissions:
+  hundundian.admin:
+    description: 管理混沌点的权限（所有命令）
+    default: op
